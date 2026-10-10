@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A concept website for Push 'n' Eat — menu, ordering, location and customer experience.">
+  <title>Push 'n' Eat | Food, Drinks & Good Vibes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Push<span>'n'</span>Eat</a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-order" href="#order">Order Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">ABULE EGBA • LAGOS</p>
+        <h1>Good food.<br><span>Good vibes.</span><br>Just push & eat.</h1>
+        <p class="hero-text">A modern restaurant experience concept designed to make discovering the menu and placing an order simple.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Menu</a>
+          <a class="btn btn-outline" href="#order">Order Food</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="food-art">🍔</div>
+        <p>Today's craving?</p>
+        <strong>Let's fix that.</strong>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Fresh</strong><span>Prepared with care</span></div>
+      <div><strong>Fast</strong><span>Easy ordering</span></div>
+      <div><strong>Local</strong><span>Abule Egba, Lagos</span></div>
+      <div><strong>Good vibes</strong><span>Made for your table</span></div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR MENU</p><h2>Pick your craving.</h2></div>
+        <div class="filters" role="group" aria-label="Filter menu">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="meals">Meals</button>
+          <button class="filter" data-filter="grills">Grills</button>
+          <button class="filter" data-filter="drinks">Drinks</button>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <article class="food-card" data-category="meals"><div class="food-image meal">🍛</div><div class="food-info"><span class="tag">Popular</span><h3>Signature Rice Bowl</h3><p>Rice, protein and tasty sides.</p><strong>₦4,500</strong><button class="add-btn" data-name="Signature Rice Bowl" data-price="4500">Add +</button></div></article>
+        <article class="food-card" data-category="meals"><div class="food-image meal2">🍝</div><div class="food-info"><h3>Jollof & Chicken</h3><p>Rich jollof served with chicken.</p><strong>₦5,000</strong><button class="add-btn" data-name="Jollof & Chicken" data-price="5000">Add +</button></div></article>
+        <article class="food-card" data-category="grills"><div class="food-image grill">🍗</div><div class="food-info"><span class="tag">Hot</span><h3>Grilled Chicken</h3><p>Seasoned grilled chicken with sides.</p><strong>₦5,500</strong><button class="add-btn" data-name="Grilled Chicken" data-price="5500">Add +</button></div></article>
+        <article class="food-card" data-category="grills"><div class="food-image grill2">🌭</div><div class="food-info"><h3>Loaded Suya Platter</h3><p>Suya-style beef with onions and sides.</p><strong>₦6,000</strong><button class="add-btn" data-name="Loaded Suya Platter" data-price="6000">Add +</button></div></article>
+        <article class="food-card" data-category="drinks"><div class="food-image drink">🥤</div><div class="food-info"><h3>Chilled Soft Drink</h3><p>Cold refreshing drink of your choice.</p><strong>₦1,000</strong><button class="add-btn" data-name="Chilled Soft Drink" data-price="1000">Add +</button></div></article>
+        <article class="food-card" data-category="drinks"><div class="food-image drink2">🍹</div><div class="food-info"><h3>Signature Mocktail</h3><p>Fruity, chilled and refreshing.</p><strong>₦2,500</strong><button class="add-btn" data-name="Signature Mocktail" data-price="2500">Add +</button></div></article>
+      </div>
+      <p class="concept-note">Concept menu only — prices and items should be replaced with the restaurant's actual menu before publishing.</p>
+    </section>
+
+    <section class="feature-section" id="order">
+      <div class="order-copy"><p class="eyebrow">ORDER WITHOUT STRESS</p><h2>Your food, your way.</h2><p>Add items to your basket, choose pickup or delivery, and send the order details to the restaurant's preferred channel.</p><div class="steps"><div><b>01</b><span>Choose your food</span></div><div><b>02</b><span>Review your order</span></div><div><b>03</b><span>Send order request</span></div></div></div>
+      <div class="cart" aria-live="polite"><div class="cart-header"><h3>Your order</h3><button id="clearCart">Clear</button></div><div id="cartItems"><p class="empty">Your basket is empty. Add something delicious.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div><button class="btn btn-primary full" id="checkoutBtn">Continue to order</button></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div><p class="eyebrow">WHY THIS CONCEPT</p><h2>Turn a restaurant visit into a digital experience.</h2></div>
+      <div class="about-copy"><p>This demo focuses on the things a customer needs quickly: what you sell, how much it costs, how to order, where you are and how to contact you.</p><p>For a real client, we would replace every placeholder with verified business information, real food photos, the actual menu, opening hours and the restaurant's preferred ordering process.</p></div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-heading"><div><p class="eyebrow">THE EXPERIENCE</p><h2>Food worth sharing.</h2></div></div>
+      <div class="gallery-grid"><div class="gallery-item g1">🍔<span>Good food</span></div><div class="gallery-item g2">🍗<span>Big cravings</span></div><div class="gallery-item g3">🍹<span>Good vibes</span></div><div class="gallery-item g4">🍛<span>Come hungry</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">FIND US</p><h2>Come through.</h2><p>Abule Egba, Lagos, Nigeria</p><p class="small">Exact address, opening hours and phone number should be verified with the business before launch.</p></div>
+      <form id="contactForm" class="contact-form"><label>Name<input required type="text" placeholder="Your name"></label><label>Phone<input required type="tel" placeholder="080..." ></label><label>Message<textarea required rows="4" placeholder="How can we help?"></textarea></label><button class="btn btn-primary" type="submit">Send message</button><p id="formMessage" class="form-message"></p></form>
+    </section>
+  </main>
+
+  <footer><div class="logo">Push<span>'n'</span>Eat</div><p>Concept website — not an official Push 'n' Eat website.</p><p>© <span id="year"></span> Concept Demo</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
